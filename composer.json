@@ -1,0 +1,8 @@
+{
+    "require": {
+        "apache/thrift": "^0.16.0"
+    },
+    "autoload": {
+        "classmap":[ "gen-php/" ]
+    }
+}

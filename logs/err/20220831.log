@@ -1,0 +1,10 @@
+[31-Aug-2022 14:10:37 Asia/Shanghai] PHP Fatal error:  Uncaught Thrift\Exception\TException: TPhpStream: Could not read 4 bytes in D:\data\thrift\vendor\apache\thrift\lib\php\lib\Transport\TPhpStream.php:92
+Stack trace:
+#0 D:\data\thrift\vendor\apache\thrift\lib\php\lib\Transport\TTransport.php(76): Thrift\Transport\TPhpStream->read(4)
+#1 D:\data\thrift\vendor\apache\thrift\lib\php\lib\Transport\TBufferedTransport.php(126): Thrift\Transport\TTransport->readAll(4)
+#2 D:\data\thrift\vendor\apache\thrift\lib\php\lib\Protocol\TBinaryProtocol.php(358): Thrift\Transport\TBufferedTransport->readAll(4)
+#3 D:\data\thrift\vendor\apache\thrift\lib\php\lib\Protocol\TBinaryProtocol.php(225): Thrift\Protocol\TBinaryProtocol->readI32(NULL)
+#4 D:\data\thrift\gen-php\userProcessor.php(31): Thrift\Protocol\TBinaryProtocol->readMessageBegin(NULL, 0, 0)
+#5 D:\data\thrift\server.php(58): userProcessor->process(Object(Thrift\Protocol\TBinaryProtocol), Object(Thrift\Protocol\TBinaryProtocol))
+#6 {main}
+  thrown in D:\data\thrift\vendor\apache\thrift\lib\php\lib\Transport\TPhpStream.php on line 92
